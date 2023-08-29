@@ -14,9 +14,10 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
-function sumOfNumbersTo(destination) {
-    let sum = 0;
-    return sum
+function sumOfNumbersTo(a) {
+    let sum = 1;
+    total_sum = sum(range(1, a + 1))
+    return total_sum
 }
 
 
