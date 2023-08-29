@@ -10,7 +10,7 @@ const assignment = {};
  * (1 to destination) where destination is a number greater than 1 and destination is included when calculating the sum.
  *
  * If you did Challenge - 1, remove the comment in the line just after this function
- *
+ 
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
@@ -29,16 +29,23 @@ function sumOfNumbersTo(a) {
  * Calculate count, sum and put in an array the even numbers from 1 to a destination. Object keys are count, sum, arrayOfEvenNumbers.
  *
  * If you did Challenge - 2, remove the comment in the line just after this function
- *
+
  * @param {Number} destination the stopping number
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
-function countEvenNumbersWithin(destination) {
+function countEvenNumbersWithin(i) {
     // Write your code here
     // get the number from 1 to destination
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
+
+    for (let i = 1; i <= destination; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+            count++;
+            arrayOfEvenNumbers.push(i);
+        }
 
     return {
         // property value shorthand
@@ -78,4 +85,4 @@ function celsiusToFahrenheit(arrayOfNumbers) {
 // ========================
 // DO NOT EDIT THIS BLOCK
 module.exports = assignment;
-// ========================
+}// ========================
